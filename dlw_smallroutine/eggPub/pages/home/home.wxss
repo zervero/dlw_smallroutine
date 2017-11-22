@@ -1,0 +1,149 @@
+.top {
+  top: -1rpx;
+  width: 100%;
+  background: #fff;
+  border-bottom: #eee solid 1rpx;
+  position: fixed;
+  
+}
+.top_t{
+  display: table;
+  width: 100%;
+}
+.top-btn {
+  display: table-cell;
+  text-align: center;
+}
+
+.choose {
+  width: 100%;
+  font-size: 36rpx;
+  display: table;
+}
+.choose-def {
+  text-align: center;
+}
+
+.choose-btn {
+  display: table-cell;
+  text-align: center;
+}
+.chooseed{
+  padding: 20rpx;
+  border: 2rpx solid #e2e2e2;
+  margin: 10rpx;
+}
+.center {
+  margin-top: 250rpx;
+  display: table;
+  width: 100%;
+  font-size: 36rpx;
+  padding-bottom: 200rpx;
+  
+}
+
+.center_sell, .center_buy {
+  display: none;
+  height: 100%;
+  background-color: #fff;
+}
+
+.show {
+  display: block !important;
+}
+.bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  background: red;
+  color: #fff;
+  display: flex;
+}
+
+.supply {
+  display: table-header-group;
+  border-color: inherit;
+  line-height: 60rpx;
+  background-color: #fff;
+}
+
+.supply_top {
+  margin: 10rpx;
+}
+
+.supply_right {
+  float: right;
+  padding-right: 30rpx;
+}
+
+.supply_left {
+  display: inline-block;
+}
+
+.up {
+  padding-top: 30rpx;
+}
+
+.down {
+  color: #999;
+  font-size: 30rpx;
+}
+
+.title {
+  padding-right: 10rpx;
+}
+
+.supply_content {
+  border-top: 2rpx solid #e2e2e2;
+  margin: 10rpx;
+}
+
+.content_info {
+  display: flex;
+}
+
+.right_content {
+  float: right;
+  padding-right: 30rpx;
+}
+
+.left_content {
+  display: inline-block;
+}
+.call {
+  float: right;
+  padding-right: 30rpx;
+}
+.bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  background: #fff;
+  display: flex;
+  color: #666;
+  border-top: 2rpx solid #e2e2e2;
+}
+
+.left {
+  width: 50%;
+  text-align: center;
+}
+
+.right {
+  border-left: 2rpx solid #e2e2e2;
+  width: 50%;
+  text-align: center;
+}
+
+.middle {
+  color: #999;
+  font-size: 30rpx;
+  width: 440rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

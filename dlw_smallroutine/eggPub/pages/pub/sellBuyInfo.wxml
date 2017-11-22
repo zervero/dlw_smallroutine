@@ -1,0 +1,44 @@
+<view>
+  <view class="center">
+    <view class="section">
+      <view class="cell">{{iteminfo.source}}：{{iteminfo.title}}
+      </view>
+      <view class="cell">数   量：{{iteminfo.count}}{{iteminfo.spec}}
+      </view>
+      <view class="cell">
+        {{iteminfo.source}}地区：{{iteminfo.addr}}
+      </view>
+    </view>
+    <view class="section">
+      <view class="cell">
+      <view>说明：</view>
+        <text class="text" >
+        {{iteminfo.memo}}
+        </text>
+      </view>
+    </view>
+    <view class="section">
+      <view class="cell">联系人信息</view>
+      <view class="cell">
+        <view class="info">
+        <view class="headIcon">
+        <image mode="scaleToFill" style="width: 48px; height: 48px;" src="{{iteminfo.personIco}}"></image>
+        </view>
+          <view class="info_text">
+             {{iteminfo.personName}} {{iteminfo.personTel}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="section">
+      <view class="cell">
+        发布时间：{{iteminfo.releaseTime}} 
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <button class="tell" open-type='share' >告诉别人</button>
+    <view class="pub" bindtap="minePubBindTap">我也要发</view>
+    <view class="call" bindtap="callBindViewTap" data-phoneNumber="{{iteminfo.personTel}}">打电话</view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<view>
+  <view class='center'>
+    <view class='tiptext'>蛋联网用户请直接登录</view>
+    <view class='cell'>
+      <input class="username" type="text" placeholder="用户名/手机号码" focus='true'/>
+    </view>
+    <view class='cell'>
+      <input class="password" type="text" placeholder="密码" password='true'/>
+    </view>
+    <button class='button' type="primary" bindtap="login"> 登录 </button>
+    <button class='button' type="default" bindtap="signin"> 快速注册 </button>
+  </view>
+</view>

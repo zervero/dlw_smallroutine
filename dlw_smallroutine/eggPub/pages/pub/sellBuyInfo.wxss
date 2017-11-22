@@ -1,0 +1,75 @@
+.section {
+  margin-bottom: 20rpx;
+  font-size: 36rpx;
+}
+
+.cell {
+  background-color: #fff;
+  border-bottom: #eee solid 1rpx;
+  padding: 20rpx;
+}
+
+.info {
+  display: flex;
+}
+
+.info_text {
+  padding: 20rpx;
+}
+
+.center {
+  color: #333;
+}
+
+.address {
+  color: #999;
+  padding-top: 20rpx;
+}
+
+.text {
+  padding-top: 0rpx;
+}
+
+.bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  background: #fff;
+  display: flex;
+  color: #f80e2d;
+  border-top: 2rpx solid #e2e2e2;
+}
+
+.tell {
+  width: 33%;
+  text-align: center;
+}
+
+.pub {
+  border-left: 2rpx solid #e2e2e2;
+  width: 33%;
+  text-align: center;
+}
+
+.call {
+  border-left: 2rpx solid #e2e2e2;
+  width: 33%;
+  text-align: center;
+}
+
+button {
+  border-radius: 0rpx;
+  line-height: 46rpx;
+  color: #f80e2d;
+  border: 0rpx solid #fff;
+  background-color: #fff;
+}
+.button-hover{
+  color: #f80e2d;
+  background-color: #fff;
+}
+button::after {
+  border: 0rpx;
+}

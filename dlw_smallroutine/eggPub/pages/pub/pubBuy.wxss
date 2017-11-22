@@ -1,0 +1,20 @@
+.section {
+  margin-bottom: 20rpx;
+}
+
+.cell {
+  background-color: #fff;
+  border-bottom: #eee solid 1rpx;
+  padding: 20rpx;
+}
+
+.pub {
+  background-color: red;
+  color: #fff;
+  margin: 20rpx;
+}
+
+.back {
+  background-color: #fff;
+  margin: 20rpx;
+}

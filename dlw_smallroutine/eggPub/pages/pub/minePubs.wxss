@@ -1,0 +1,100 @@
+.top {
+  top: -1rpx;
+  width: 100%;
+  background: #fff;
+  border-bottom: #eee solid 1rpx;
+  line-height: 80rpx;
+  z-index: 100000;
+  display: table;
+  position: fixed;
+}
+
+.top-btn {
+  border-right: 2rpx solid #e2e2e2;
+  display: table-cell;
+  width: 50%;
+  padding: 0rpx;
+  text-align: center;
+}
+
+.top-hoverd-btn {
+  color: red;
+  border-bottom: 6rpx solid red;
+}
+.center_sell, .center_buy {
+  display: none;
+  height: 100%;
+}
+.show {
+  display: block !important;
+}
+.bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  background: red;
+  color: #fff;
+  display: flex;
+}
+
+.pubInfo {
+  width: 100%;
+  text-align: center;
+}
+
+.content {
+  background: #fff;
+  margin-bottom: 30rpx;
+}
+
+.up {
+  padding: 30rpx;
+}
+
+.address{
+  color: #999;
+  padding-top: 20rpx;
+  font-size: 30rpx;
+}
+
+.down {
+  padding: 20rpx;
+  display: flex;
+  font-size: 30rpx;
+  color: #999;
+  border-top: 2rpx solid #e2e2e2;
+}
+
+.left {
+  width: 50%;
+  text-align: center;
+}
+
+.right {
+  border-left: 2rpx solid #e2e2e2;
+  width: 50%;
+  text-align: center;
+}
+
+.center {
+  padding-bottom: 110rpx;
+  padding-top: 90rpx;
+  font-size: 36rpx;
+}
+.edit {
+  width: 33%;
+  text-align: center;
+}
+
+.delete {
+  border-left: 2rpx solid #e2e2e2;
+  width: 33%;
+  text-align: center;
+}
+.update {
+  border-left: 2rpx solid #e2e2e2;
+  width: 33%;
+  text-align: center;
+}

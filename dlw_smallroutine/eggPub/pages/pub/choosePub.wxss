@@ -1,0 +1,18 @@
+.center {
+  text-align: center;
+}
+.text {
+  padding-top: 50rpx;
+}
+.sell {
+  padding: 40rpx;
+  text-align: center;
+  margin: 50rpx;
+}
+
+.buy {
+  padding: 40rpx;
+  text-align: center;
+  margin: 50rpx;
+   
+}

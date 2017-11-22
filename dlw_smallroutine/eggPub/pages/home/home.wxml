@@ -1,0 +1,93 @@
+<view>
+  <view class="top">
+    <view class="top_t">
+      <view class="top-btn {{sell}}" bindtap="toSell">
+        <image mode="scaleToFill" style="width: 55px; height: 58px;" src="../assets/img/sell{{source==2?'':'01'}}.jpg"></image>
+      </view>
+      <view class="top-btn {{buy}}" bindtap="toBuy">
+        <image mode="scaleToFill" style="width: 55px; height: 58px;" src="../assets/img/buy{{source==2?'01':''}}.jpg"></image>
+      </view>
+    </view>
+    <view class="choose">
+      <view class="choose-def">
+        <view class='chooseed'>
+          <picker bindchange="goSelectArea" bindcolumnchange="citycolumnchange" range="{{areaArray}}" value="{{index}}" mode="multiSelector">
+            <view class="weui-input">{{selectArea?selectArea:"选择地区"}}</view>
+          </picker>
+        </view>
+
+      </view>
+      <view class="choose-btn">
+        <view class='chooseed'>
+          <picker bindchange="goSelectEggColor" range="{{eggArray}}" value="{{index}}">
+            <view class="weui-input">{{selectEggColor?selectEggColor:"选择种类"}}</view>
+          </picker>
+        </view>
+
+      </view>
+    </view>
+  </view>
+  <view class="center">
+    <view class="center_sell {{sell=='top-hoverd-btn'?'show': ''}}">
+      <block wx:for="{{sellArray}}" wx:for-item="itemInfo" wx:key="*this">
+        <view class="supply_content" bindtap="supplybindViewTap" data-itemInfo="{{itemInfo}}">
+          <view class="up">
+            <view class="left_content">
+              <view class="content_info">
+                <view class="title">{{itemInfo.source}}{{itemInfo.title}} {{itemInfo.count}}{{itemInfo.spec}}</view>
+                <view class="name">{{itemInfo.personName}}</view>
+                <view wx:if="{{itemInfo.authentication == 1}}">
+                  <image mode="scaleToFill" style="width: 45px; height: 14px;" src="../assets/img/cericon.jpg"></image>
+                </view>
+
+
+              </view>
+            </view>
+            <view class="call" catchtap="callBindViewTap" data-phoneNumber="{{itemInfo.personTel}}">
+              <image style="width: 50px; height: 22px;" src="../assets/img/callicon.jpg"></image>
+            </view>
+          </view>
+          <view class="middle">{{itemInfo.memo}}</view>
+          <view class="down">
+            <view class="left_content">{{itemInfo.addr}}</view>
+            <view class="right_content">{{itemInfo.releaseTime}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+    <view class="center_buy {{buy=='top-hoverd-btn'?'show': ''}}">
+
+      <block wx:for="{{buyArray}}" wx:for-item="itemInfo" wx:key="*this">
+        <view class="supply_content" bindtap="supplybindViewTap" data-itemInfo="{{itemInfo}}">
+          <view class="up">
+            <view class="left_content">
+              <view class="content_info">
+                <view class="title">{{itemInfo.source}}{{itemInfo.title}} {{itemInfo.count}}{{itemInfo.spec}}</view>
+                <view class="name">{{itemInfo.personName}}</view>
+                <view wx:if="{{itemInfo.authentication == 1}}">
+                  <image mode="scaleToFill" style="width: 45px; height: 14px;" src="../assets/img/cericon.jpg"></image>
+                </view>
+              </view>
+            </view>
+            <view class="right_content" catchtap="callBindViewTap" data-phoneNumber="{{itemInfo.personTel}}">
+              <image style="width: 50px; height: 22px;" src="../assets/img/callicon.jpg"></image>
+            </view>
+
+          </view>
+          <view class="middle">{{itemInfo.memo}}</view>
+          <view class="down">
+            <view class="left_content">{{itemInfo.addr}}</view>
+            <view class="right_content">{{itemInfo.releaseTime}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="left" bindtap="pubBindTap">
+      <image mode="scaleToFill" style="width: 28rpx; height: 32rpx;" src="../assets/img/pubed.jpg"></image>  我要发布</view>
+    <view class="right" bindtap="minePubBindTap">
+      <image mode="scaleToFill" style="width: 28rpx; height: 32rpx;" src="../assets/img/minepub.jpg"></image>  我的发布</view>
+  </view>
+
+</view>

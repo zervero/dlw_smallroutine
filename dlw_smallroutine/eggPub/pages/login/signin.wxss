@@ -1,0 +1,15 @@
+.cell {
+  background-color: #fff;
+  margin:20rpx 0rpx 20rpx 0rpx;
+  padding: 20rpx;
+  display: flex;
+}
+.button{
+  margin: 40rpx;
+}
+.smsCode {
+  padding: 20rpx 200rpx 10rpx 10rpx;
+}
+.phoneNumber {
+  padding:20rpx 0rpx 20rpx;
+}

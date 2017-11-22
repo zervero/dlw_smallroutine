@@ -1,0 +1,21 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/pub/minePubs",
+    "pages/pub/pubSell",
+    "pages/pub/pubBuy",
+    "pages/pub/sellBuyInfo",
+    "pages/supply/supply",
+    "pages/pub/choosePub",
+    "pages/login/login",
+    "pages/login/signin",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "蛋联",
+    "navigationBarTextStyle":"black"
+  }
+}

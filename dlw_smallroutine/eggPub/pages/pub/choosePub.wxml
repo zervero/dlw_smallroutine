@@ -1,0 +1,7 @@
+<view>
+  <view class='center'>
+    <view class='text'>请点击您要发布的内容</view>
+    <view class='sell' bindtap="toSell"><image mode="scaleToFill" style="width: 180rpx; height: 180rpx;" src="../assets/img/selldan.jpg"></image></view>
+    <view class='buy' bindtap="toBuy"><image mode="scaleToFill" style="width: 180rpx; height: 180rpx;" src="../assets/img/buydan.jpg"></image></view>
+  </view>
+</view>

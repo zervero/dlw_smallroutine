@@ -1,0 +1,191 @@
+<view>
+  <view class="top">
+    <view class="top-def" bindtap="toSell">默认</view>
+    <view class="top-btn {{buy}}">
+      <picker bindchange="bindPickerChange" range="{{areaArray}}" value="{{index}}">
+        <view class="weui-input">{{areaArray[index]?areaArray[index]:'地区'}}</view>
+      </picker>
+    </view>
+  </view>
+  <view class="center">
+    <view class="supply">
+      
+      <view class="supply_content" bindtap="supplybindViewTap">
+        <view class="up">
+          <view class="left_content">
+            <view class="content_info">
+              <view class="title">粉壳蛋400 一筐</view>
+              <image mode="scaleToFill" style="width: 32px; height: 32px;" src="../assets/img/cericon.png"></image>
+              <view class="name">郑成义</view>
+            </view>
+          </view>
+          <view class="right_content" catchtap="callBindViewTap"><image style="width: 32px; height: 32px;" src="../assets/img/callicon.png"></image></view>
+           
+        </view>
+        <view class="down">
+          <view class="left_content">所在地区 河南省郑州市</view>
+          <view class="right_content">20分钟前</view>
+        </view>
+      </view>
+      <view class="supply_content" bindtap="supplybindViewTap">
+        <view class="up">
+          <view class="left_content">
+            <view class="content_info">
+              <view class="title">粉壳蛋400 一筐</view>
+            </view>
+          </view>
+          <view class="right_content" catchtap="callBindViewTap"><image style="width: 32px; height: 32px;" src="../assets/img/callicon.png"></image></view>
+           
+        </view>
+        <view class="down">
+          <view class="left_content">所在地区 河南省郑州市</view>
+          <view class="right_content">20分钟前</view>
+        </view>
+      </view>
+    </view>
+    <view class="supply">
+      
+      <view class="supply_content" bindtap="supplybindViewTap">
+        <view class="up">
+          <view class="left_content">
+            <view class="content_info">
+              <view class="title">粉壳蛋400 一筐</view>
+              <image mode="scaleToFill" style="width: 32px; height: 32px;" src="../assets/img/cericon.png"></image>
+              <view class="name">郑成义</view>
+            </view>
+          </view>
+          <view class="right_content" catchtap="callBindViewTap"><image style="width: 32px; height: 32px;" src="../assets/img/callicon.png"></image></view>
+           
+        </view>
+        <view class="down">
+          <view class="left_content">所在地区 河南省郑州市</view>
+          <view class="right_content">20分钟前</view>
+        </view>
+      </view>
+      <view class="supply_content" bindtap="supplybindViewTap">
+        <view class="up">
+          <view class="left_content">
+            <view class="content_info">
+              <view class="title">粉壳蛋400 一筐</view>
+            </view>
+          </view>
+          <view class="right_content" catchtap="callBindViewTap"><image style="width: 32px; height: 32px;" src="../assets/img/callicon.png"></image></view>
+           
+        </view>
+        <view class="down">
+          <view class="left_content">所在地区 河南省郑州市</view>
+          <view class="right_content">20分钟前</view>
+        </view>
+      </view>
+    </view>
+    <view class="supply">
+      
+      <view class="supply_content" bindtap="supplybindViewTap">
+        <view class="up">
+          <view class="left_content">
+            <view class="content_info">
+              <view class="title">粉壳蛋400 一筐</view>
+              <image mode="scaleToFill" style="width: 32px; height: 32px;" src="../assets/img/cericon.png"></image>
+              <view class="name">郑成义</view>
+            </view>
+          </view>
+          <view class="right_content" catchtap="callBindViewTap"><image style="width: 32px; height: 32px;" src="../assets/img/callicon.png"></image></view>
+           
+        </view>
+        <view class="down">
+          <view class="left_content">所在地区 河南省郑州市</view>
+          <view class="right_content">20分钟前</view>
+        </view>
+      </view>
+      <view class="supply_content" bindtap="supplybindViewTap">
+        <view class="up">
+          <view class="left_content">
+            <view class="content_info">
+              <view class="title">粉壳蛋400 一筐</view>
+            </view>
+          </view>
+          <view class="right_content" catchtap="callBindViewTap"><image style="width: 32px; height: 32px;" src="../assets/img/callicon.png"></image></view>
+           
+        </view>
+        <view class="down">
+          <view class="left_content">所在地区 河南省郑州市</view>
+          <view class="right_content">20分钟前</view>
+        </view>
+      </view>
+    </view>
+    <view class="supply">
+      
+      <view class="supply_content" bindtap="supplybindViewTap">
+        <view class="up">
+          <view class="left_content">
+            <view class="content_info">
+              <view class="title">粉壳蛋400 一筐</view>
+              <image mode="scaleToFill" style="width: 32px; height: 32px;" src="../assets/img/cericon.png"></image>
+              <view class="name">郑成义</view>
+            </view>
+          </view>
+          <view class="right_content" catchtap="callBindViewTap"><image style="width: 32px; height: 32px;" src="../assets/img/callicon.png"></image></view>
+           
+        </view>
+        <view class="down">
+          <view class="left_content">所在地区 河南省郑州市</view>
+          <view class="right_content">20分钟前</view>
+        </view>
+      </view>
+      <view class="supply_content" bindtap="supplybindViewTap">
+        <view class="up">
+          <view class="left_content">
+            <view class="content_info">
+              <view class="title">粉壳蛋400 一筐</view>
+            </view>
+          </view>
+          <view class="right_content" catchtap="callBindViewTap"><image style="width: 32px; height: 32px;" src="../assets/img/callicon.png"></image></view>
+           
+        </view>
+        <view class="down">
+          <view class="left_content">所在地区 河南省郑州市</view>
+          <view class="right_content">20分钟前</view>
+        </view>
+      </view>
+    </view>
+    <view class="supply">
+      
+      <view class="supply_content" bindtap="supplybindViewTap">
+        <view class="up">
+          <view class="left_content">
+            <view class="content_info">
+              <view class="title">粉壳蛋400 一筐</view>
+              <image mode="scaleToFill" style="width: 32px; height: 32px;" src="../assets/img/cericon.png"></image>
+              <view class="name">郑成义</view>
+            </view>
+          </view>
+          <view class="right_content" catchtap="callBindViewTap"><image style="width: 32px; height: 32px;" src="../assets/img/callicon.png"></image></view>
+           
+        </view>
+        <view class="down">
+          <view class="left_content">所在地区 河南省郑州市</view>
+          <view class="right_content">20分钟前</view>
+        </view>
+      </view>
+      <view class="supply_content" bindtap="supplybindViewTap">
+        <view class="up">
+          <view class="left_content">
+            <view class="content_info">
+              <view class="title">粉壳蛋400 一筐</view>
+            </view>
+          </view>
+          <view class="right_content" catchtap="callBindViewTap"><image style="width: 32px; height: 32px;" src="../assets/img/callicon.png"></image></view>
+           
+        </view>
+        <view class="down">
+          <view class="left_content">所在地区 河南省郑州市</view>
+          <view class="right_content">20分钟前</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="left" bindtap="pubBindTap">我要发布</view>
+    <view class="right" bindtap="minePubBindTap">我的发布</view>
+  </view>
+</view>

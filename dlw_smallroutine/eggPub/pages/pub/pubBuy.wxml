@@ -1,0 +1,36 @@
+<view>
+  <view class="center">
+    <view class="section">
+      <view class="cell">
+
+        <picker bindchange="bindPickerChange" range="{{colorArray}}" value="{{index}}">
+          <view class="weui-input">蛋壳颜色：{{colorArray[index]}}</view>
+        </picker>
+      </view>
+      <view class="cell">
+        <picker bindchange="bindPickerChange" range="{{specArray}}" value="{{index}}">
+          <view class="weui-input">规 格：{{specArray[index]}}</view>
+        </picker>
+      </view>
+      <view class="cell">
+        求购数量：<input type="number" />
+      </view>
+      <view class="cell">
+        <picker bindchange="bindPickerChange" range="{{areaArray}}" value="{{index}}">
+          <view class="weui-input">求购地区：{{areaArray[index]}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="section">
+      <view class="cell">
+         其他说明(选填)：<textarea  placeholder='填写你的其他说明吧，200字以内'/>
+      </view>
+    </view>
+    <view class="section">
+      <view class="cell">联系人：<input type="text" /></view>
+      <view class="cell">联系方式：<input type="number" /></view>
+    </view>
+    <button class="pub" >发布求购</button>
+    <button class="back" bindtap="bindBack">返回</button>
+  </view>
+</view>

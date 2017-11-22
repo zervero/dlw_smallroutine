@@ -1,0 +1,43 @@
+<view>
+  <view class="top">
+    <view class="top-btn {{sell}}" bindtap="toSell">我的出售</view>
+    <view class="top-btn {{buy}}" bindtap="toBuy">我的求购</view>
+  </view>
+  <view class="center">
+    <view class="center_sell {{sell=='top-hoverd-btn'?'show': ''}}">
+    <block wx:for="{{mineSellArray}}" wx:for-item="itemInfo" wx:key="*this">
+      <view class="content">
+        <view class="up">
+          <view class="number">{{itemInfo.title}}-{{itemInfo.count}}{{itemInfo.countSpec}}</view>
+          <view class="address">{{itemInfo.addr}}</view>
+        </view>
+        <view class="down">
+          <view class="edit" bindtap="editPubBindTap" data-itemInfo="{{itemInfo}}">编辑</view>
+          <view class="delete" bindtap="minePubBindTap" data-itemInfo="{{itemInfo}}">删除</view>
+          <view class="update" bindtap="minePubBindTap" data-itemInfo="{{itemInfo}}">更新</view>
+        </view>
+      </view>
+    </block>
+       
+    </view>
+    <view class="center_buy {{buy=='top-hoverd-btn'?'show': ''}}">
+     <block wx:for="{{mineBuyArray}}" wx:for-item="itemInfo" wx:key="*this">
+      <view class="content">
+        <view class="up">
+          <view class="number">{{itemInfo.title}}-{{itemInfo.count}}{{itemInfo.countSpec}}</view>
+          <view class="address">{{itemInfo.produceArea}}</view>
+        </view>
+        <view class="down">
+          <view class="edit" bindtap="editPubBindTap" data-itemInfo="{{itemInfo}}">编辑</view>
+          <view class="delete" bindtap="minePubBindTap" data-itemInfo="{{itemInfo}}">删除</view>
+          <view class="update" bindtap="minePubBindTap" data-itemInfo="{{itemInfo}}">更新</view>
+        </view>
+      </view>
+    </block> 
+    </view>
+
+  </view>
+  <view class="bottom">
+    <view class="pubInfo" bindtap="pubBindTap">发布信息</view>
+  </view>
+</view>
